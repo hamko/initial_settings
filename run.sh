@@ -27,3 +27,7 @@ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 sudo cp dropbox /etc/init.d/dropbox
 sudo sysv-rc-conf dropbox on
 ~/.dropbox-dist/dropboxd
+
+cp vimrc ~/.vimrc
+cp bashrc ~/.bashrc
+cp zshrc ~/.zshrc
