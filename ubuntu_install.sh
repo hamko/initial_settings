@@ -11,6 +11,12 @@ sudo aptitude -y install minicom
 sudo aptitude -y install cmake cmake-curses-gui
 sudo aptitude -y install octave3.2 octave3.2-headers octave3.2-htmldoc
 
+##Chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list
+sudo aptitude update
+sudo aptitude -y install google-chrome-beta
+
 # eigen, qt, glew, yaml, zlib, libjpeg, libode, libpng
 sudo aptitude -y install build-essential cmake-curses-gui libboost-all-dev libeigen3-dev libeigen3-doc libqt4-dev libqt4-opengl-dev qt4-dev-tools qt4-qtconfig qt4-doc-html libglew1.6-dev libyaml-dev gettext zlib1g-dev libjpeg62-dev libpng12-dev libode-dev libomniorb4-dev libcos4-dev omniidl omniorb-nameserver libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libpulse-dev libsndfile1-dev uuid-dev
 
@@ -29,12 +35,6 @@ sudo apt-get -y install libpcl-all
 
 ####ROS installできなくなってる
 ##Catkin workspace
-
-##Chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list
-sudo aptitude update
-yes | sudo aptitude install google-chrome-beta
 
 #Dropbox
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
