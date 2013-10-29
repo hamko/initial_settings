@@ -1,3 +1,4 @@
+#!/bin/sh
 sudo su
 
 sudo apt-get -y install aptitude
@@ -10,6 +11,9 @@ sudo aptitude -y install minicom
 sudo aptitude -y install cmake cmake-curses-gui
 sudo aptitude -y install octave3.2 octave3.2-headers octave3.2-htmldoc
 
+# eigen, qt, glew, yaml, zlib, libjpeg, libode, libpng
+sudo aptitude -y install build-essential cmake-curses-gui libboost-all-dev libeigen3-dev libeigen3-doc libqt4-dev libqt4-opengl-dev qt4-dev-tools qt4-qtconfig qt4-doc-html libglew1.6-dev libyaml-dev gettext zlib1g-dev libjpeg62-dev libpng12-dev libode-dev libomniorb4-dev libcos4-dev omniidl omniorb-nameserver libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libpulse-dev libsndfile1-dev uuid-dev
+
 ####CPPUNIT
 sudo aptitude -y install libcppunit-1.12-1 libcppunit-dev libcppunit-doc libcppunit-subunit-dev libcppunit-subunit0 libqxcppunit-dev libqxcppunitd1
 
@@ -19,25 +23,12 @@ sudo apt-get -y update
 sudo apt-get -y install libpcl-all
 
 ##exfat error!
-sudo add-apt-repository -y ppa:relan/exfat 
-sudo apt-get -y update
-sudo apt-get -y install fuse-exfat exfat-utils
+#sudo add-apt-repository -y ppa:relan/exfat 
+#sudo apt-get -y update
+#sudo apt-get -y install fuse-exfat exfat-utils
 
-####ROS
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
-wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install ros-groovy-desktop-full
-source /opt/ros/groovy/setup.bash
-
+####ROS installできなくなってる
 ##Catkin workspace
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
-catkin_init_workspace
-cd ~/catkin_ws/
-catkin_make
-source devel/setup.bash
-
 
 ##Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
