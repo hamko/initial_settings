@@ -1,0 +1,52 @@
+#gnome-control-center
+# Keyboard Layout -> Ctrl Position -> Caps Lock as Ctrl
+
+##Skype
+#1) /etc/apt/sources.listをいじって、以下の部分のコメントアウトを外す（Ubuntu12.10の場合）
+#deb http://archive.canonical.com/ubuntu quantal partner
+#2) ターミナルから以下を実行
+sudo apt-get update
+sudo apt-get install skype
+
+####Eigen
+#http://eigen.tuxfamily.org/index.php?title=Main_Pageから最新版のソースをダウンロードする．
+#/home/Downloadsに，tar.gz形式で落としたと仮定すると，
+#cd ~/Downloads
+#tar xvf ~/Downloads/eigen-******.tar.gz
+#mkdir ~/eigen
+#cd ~/eigen
+#cmake ~/Downloads/eigen-******
+#sudo make install
+
+
+#sudo apt-get update && sudo apt-get -y install mozc-server ibus-mozc
+#ログアウト
+#ログイン
+#ibus-setup
+#インプットメソッドに移動。インプットメソッドの選択->日本語->Mozcを選択。追加を押す。Mozcをクリック。上へを押す。閉じる。
+#(Anthyを選択。削除。やってもやらなくても。)
+#ログアウト
+#ログイン
+
+####
+# gnome-session-properties 
+# 以下を追加
+#/home/ryo/.dropbox-dist/dropboxd
+#/usr/bin/ibus-setup
+#/usr/bin/skype
+
+# ~/.gitconfigに
+#[core]
+#    excludesfile = ~/git/setting/config/.gitignore
+
+####armadillo
+#sudo aptitude install libblas-dev liblapack-dev
+#http://sourceforge.net/projects/arma/files/armadillo-3.4.2.tar.gz/download からとってくる.
+#cd ~/Download
+#tar xvf armadillo-3.4.2.tar.gz
+#cd armadillo-3.4.2
+#./configure --prefix=/usr/local
+#make
+#sudo make install
+
+
