@@ -10,6 +10,7 @@ sudo aptitude -y install gnuplot
 sudo aptitude -y install minicom
 sudo aptitude -y install cmake cmake-curses-gui
 sudo aptitude -y install octave3.2 octave3.2-headers octave3.2-htmldoc
+sudo aptitude -y install rdesktop
 
 ##Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
