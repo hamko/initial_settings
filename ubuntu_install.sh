@@ -11,6 +11,12 @@ sudo aptitude -y install minicom
 sudo aptitude -y install cmake cmake-curses-gui
 sudo aptitude -y install octave3.2 octave3.2-headers octave3.2-htmldoc
 
+# for Lab
+sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libboost-all-dev octave3.2 octave3.2-headers libusb-1.0-0-dev libgtk2.0-dev
+
+# Drawing softs
+sudo aptitude -y install inkscape
+sudo aptitude -y install gimp
 ##Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list
@@ -45,4 +51,5 @@ sudo apt-get update && sudo apt-get install nautilus-dropbox
 #Couldn't find any package whose name or description matched "libglut3-dev"
 sudo aptitude install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev build-essential
 
-
+##OpenCV
+./opencv_installer.sh
