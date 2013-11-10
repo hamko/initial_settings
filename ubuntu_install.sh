@@ -54,3 +54,6 @@ sudo aptitude install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-dev l
 
 ##OpenCV
 ./opencv_installer.sh
+
+##inkscape
+sudo aptitude -y install inkscape

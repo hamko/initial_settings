@@ -1,3 +1,5 @@
+pushd ~
+
 arch=$(uname -m)
 if [ "$arch" == "i686" -o "$arch" == "i386" -o "$arch" == "i486" -o "$arch" == "i586" ]; then
 flag=1
@@ -64,3 +66,5 @@ sudo make install
 sudo sh -c "echo '/usr/local/lib' >> /etc/ld.so.conf"
 sudo ldconfig
 echo "OpenCV 2.4.2 ready to be used"
+
+popd
