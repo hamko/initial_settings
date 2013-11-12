@@ -1,3 +1,6 @@
+#ubuntu software center
+system load indicator
+
 #gnome-control-center
 # Keyboard Layout -> Ctrl Position -> Caps Lock as Ctrl
 
@@ -48,5 +51,13 @@ sudo apt-get install skype
 #./configure --prefix=/usr/local
 #make
 #sudo make install
+
+# ThinkPadのタッチパネル無効化
+/usr/share/X11/xorg.conf.d/50-synaptics.confの最後に以下を追記。
+Section "InputClass"
+    Identifier "no need for accelerometers in X"
+    MatchProduct "SynPS/2 Synaptics TouchPad"
+    Option "Ignore" "on"
+EndSection
 
 
