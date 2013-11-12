@@ -1,6 +1,4 @@
 #!/bin/sh
-sudo su
-
 sudo apt-get -y install aptitude
 sudo aptitude -y install git gitk 
 sudo aptitude -y install subversion
@@ -35,11 +33,6 @@ sudo add-apt-repository -y ppa:v-launchpad-jochen-sprickerhof-de/pcl
 sudo apt-get -y update
 sudo apt-get -y install libpcl-all
 
-##exfat error!
-#sudo add-apt-repository -y ppa:relan/exfat 
-#sudo apt-get -y update
-#sudo apt-get -y install fuse-exfat exfat-utils
-
 ####ROS installできなくなってる
 ##Catkin workspace
 
@@ -50,10 +43,15 @@ sudo apt-get update && sudo apt-get install nautilus-dropbox
 
 ####OpenGL
 #Couldn't find any package whose name or description matched "libglut3-dev"
-sudo aptitude install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev build-essential
+sudo aptitude -y install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev build-essential
 
 ##OpenCV
 ./opencv_installer.sh
 
 ##inkscape
 sudo aptitude -y install inkscape
+
+#for vm
+sudo aptitude -y install build-essential linux-headers-$(uname -r) open-vm-dkms
+sudo ln -s /usr/src/linux-headers-$(uname -r)/include/generated/uapi/linux/version.h /usr/src/linux-headers-$(uname -r)/include/linux/version.h
+insmod /lib/modules/3.8.0-19-generic/misc/vmmon.ko
