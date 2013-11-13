@@ -55,3 +55,6 @@ sudo aptitude -y install inkscape
 sudo aptitude -y install build-essential linux-headers-$(uname -r) open-vm-dkms
 sudo ln -s /usr/src/linux-headers-$(uname -r)/include/generated/uapi/linux/version.h /usr/src/linux-headers-$(uname -r)/include/linux/version.h
 insmod /lib/modules/3.8.0-19-generic/misc/vmmon.ko
+
+#recordmydesktop
+sudo aptitude -y install mencoder
