@@ -1,3 +1,7 @@
+cd ~
+mkdir build
+cd build
+
 sudo apt-get -y install aptitude 
 sudo aptitude -y install git sysv-rc-conf
 

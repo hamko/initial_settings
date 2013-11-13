@@ -22,14 +22,8 @@ sudo apt-get install skype
 #sudo make install
 
 
-#sudo apt-get update && sudo apt-get -y install mozc-server ibus-mozc
-#ログアウト
-#ログイン
-#ibus-setup
-#インプットメソッドに移動。インプットメソッドの選択->日本語->Mozcを選択。追加を押す。Mozcをクリック。上へを押す。閉じる。
-#(Anthyを選択。削除。やってもやらなくても。)
-#ログアウト
-#ログイン
+#mozc
+#input methodの設定から、カスタマイズでmozcの優先順位を上げる
 
 ####
 # gnome-session-properties 

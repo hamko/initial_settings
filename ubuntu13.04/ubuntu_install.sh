@@ -1,4 +1,7 @@
 #!/bin/sh
+cd ~
+mkdir build; cd build 
+
 sudo apt-get -y install aptitude
 sudo aptitude -y install git gitk 
 sudo aptitude -y install subversion
@@ -58,3 +61,8 @@ insmod /lib/modules/3.8.0-19-generic/misc/vmmon.ko
 
 #recordmydesktop
 sudo aptitude -y install mencoder
+
+#mozc
+sudo aptitude -y install ibus-mozc
+killall ibus-daemon && ibus-daemon -d -x
+
