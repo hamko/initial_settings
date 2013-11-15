@@ -1,10 +1,17 @@
+cd ~
+mkdir build
+cd build
+
 sudo apt-get -y install aptitude 
 sudo aptitude -y install git sysv-rc-conf
 
 git config --global github.name hamko
+git config --global user.name hamko
 git config --global github.email !!!your email!!!
+git config --global user.email !!!your email!!!
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
+git config --global core.excludesfile ~/git/setting/config/.gitignore
 
 git config --global alias.co 'checkout'
 git config --global alias.st 'status'
@@ -26,4 +33,8 @@ git clone https://github.com/hamko/sample.git
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 sudo cp dropbox /etc/init.d/dropbox
 sudo sysv-rc-conf dropbox on
-~/.dropbox-dist/dropboxd
+~/.dropbox-dist/dropboxd &
+
+cp vimrc ~/.vimrc
+cp bashrc ~/.bashrc
+cp zshrc ~/.zshrc
