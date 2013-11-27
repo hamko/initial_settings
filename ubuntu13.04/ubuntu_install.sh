@@ -66,3 +66,7 @@ sudo aptitude -y install mencoder
 sudo aptitude -y install ibus-mozc
 killall ibus-daemon && ibus-daemon -d -x
 
+#acroread
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo aptitude update
+sudo aptitude -y install acroread
