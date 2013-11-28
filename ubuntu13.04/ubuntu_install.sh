@@ -75,3 +75,6 @@ sudo apt-get -y install gmediafinder
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo aptitude update
 sudo aptitude -y install acroread
+
+# youtube-dl
+sudo apt-get -y install youtube-dl
