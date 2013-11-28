@@ -70,3 +70,8 @@ killall ibus-daemon && ibus-daemon -d -x
 sudo apt-add-repository ppa:s-lagui/ppa
 sudo apt-get update
 sudo apt-get -y install gmediafinder
+
+#acroread
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo aptitude update
+sudo aptitude -y install acroread
