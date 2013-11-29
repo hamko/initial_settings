@@ -56,3 +56,12 @@ EndSection
 
 # ディレクトリ名を日本語から英語に
 LANG=C xdg-user-dirs-gtk-update
+
+# vmplayer 
+https://my.vmware.com/jp/web/vmware/free#desktop_end_user_computing/vmware_player/
+txtをダウンロードして実行権限をつけて実行。
+その後、以下を実行
+sudo apt-get install build-essential linux-headers-$(uname -r) open-vm-dkms
+sudo ln -s /usr/src/linux-headers-$(uname -r)/include/generated/uapi/linux/version.h /usr/src/linux-headers-$(uname -r)/include/linux/version.h
+sudo vmware-modconfig --console --install-all
+
