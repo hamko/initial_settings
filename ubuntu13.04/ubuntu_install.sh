@@ -68,3 +68,15 @@ sudo aptitude -y install mencoder
 sudo aptitude -y install ibus-mozc
 killall ibus-daemon && ibus-daemon -d -x
 
+# gmediafinder
+sudo apt-add-repository ppa:s-lagui/ppa
+sudo apt-get update
+sudo apt-get -y install gmediafinder
+
+#acroread
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo aptitude update
+sudo aptitude -y install acroread
+
+# youtube-dl
+sudo apt-get -y install youtube-dl
