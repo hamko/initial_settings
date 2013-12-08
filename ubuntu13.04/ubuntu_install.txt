@@ -3,7 +3,7 @@ system load indicator
 sound converter
 
 #sound converter
-add folder (/home/Dropbox/Music/)
+add flles (/home/Dropbox/Music/)
 このフォルダの中へ (/home/Dropbox/Music/mp3/)
 delete original file
 Format MP3
