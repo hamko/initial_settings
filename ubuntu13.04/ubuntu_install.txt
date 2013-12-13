@@ -1,5 +1,12 @@
 #ubuntu software center
 system load indicator
+sound converter
+
+#sound converter
+add flles (/home/Dropbox/Music/)
+このフォルダの中へ (/home/Dropbox/Music/mp3/)
+delete original file
+Format MP3
 
 #gnome-control-center
 # Keyboard Layout -> Ctrl Position -> Caps Lock as Ctrl
@@ -64,4 +71,5 @@ txtをダウンロードして実行権限をつけて実行。
 sudo apt-get install build-essential linux-headers-$(uname -r) open-vm-dkms
 sudo ln -s /usr/src/linux-headers-$(uname -r)/include/generated/uapi/linux/version.h /usr/src/linux-headers-$(uname -r)/include/linux/version.h
 sudo vmware-modconfig --console --install-all
-
+sudo modprobe vmmon
+sudo modprobe vmci
