@@ -1,3 +1,8 @@
+#dropbox rc
+vi etc/rc.local
+/home/hamko/.dropbox-dist/dropboxd
+をexitの上に追記
+
 #ubuntu software center
 system load indicator
 sound converter

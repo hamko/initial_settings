@@ -1,4 +1,5 @@
 #!/bin/sh
+
 cd ~
 mkdir build; cd build 
 
@@ -14,6 +15,7 @@ sudo aptitude -y install octave3.2 octave3.2-headers octave3.2-htmldoc
 sudo aptitude -y install rdesktop
 sudo aptitude -y install liboctave-dev libtiff4-dev
 sudo aptitude -y install ffmpeg
+sudo aptitude -y install sshfs
 
 # for Lab
 sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libboost-all-dev octave3.2 octave3.2-headers libusb-1.0-0-dev libgtk2.0-dev
@@ -21,7 +23,13 @@ sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev l
 # Drawing softs
 sudo aptitude -y install inkscape
 sudo aptitude -y install gimp
-##Chrome
+
+# sshfs
+if [ -e ~/Dropbox/setting/bin/set_sshfs.sh ]; then
+    ~/Dropbox/setting/bin/set_sshfs.sh
+fi
+
+##Chrome (aptitudeじゃダメなん？)
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list
 sudo aptitude update

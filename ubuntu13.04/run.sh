@@ -1,3 +1,4 @@
+# !!!で検索
 cd ~
 mkdir build
 cd build
@@ -30,6 +31,7 @@ git clone https://github.com/hamko/cppode.git
 git clone https://github.com/hamko/docs.git
 git clone https://github.com/hamko/sample.git
 
+# dropbox (sudo aptitude install dropboxじゃダメ？)
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 sudo cp dropbox /etc/init.d/dropbox
 sudo sysv-rc-conf dropbox on
