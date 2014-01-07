@@ -90,3 +90,6 @@ sudo aptitude -y install acroread
 
 # youtube-dl
 sudo apt-get -y install youtube-dl
+
+# topcoder
+cp -r topcoder ~
