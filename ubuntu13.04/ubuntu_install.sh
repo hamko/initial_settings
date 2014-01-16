@@ -70,6 +70,7 @@ sudo aptitude -y install build-essential linux-headers-$(uname -r) open-vm-dkms
 sudo ln -s /usr/src/linux-headers-$(uname -r)/include/generated/uapi/linux/version.h /usr/src/linux-headers-$(uname -r)/include/linux/version.h
 sudo insmod /lib/modules/3.8.0-19-generic/misc/vmmon.ko
 sudo vmware-modconfig --console --install-all
+sudo service vmware start
 
 #recordmydesktop
 sudo aptitude -y install mencoder
@@ -90,3 +91,6 @@ sudo aptitude -y install acroread
 
 # youtube-dl
 sudo apt-get -y install youtube-dl
+
+# topcoder
+cp -r topcoder ~
