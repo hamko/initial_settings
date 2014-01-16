@@ -16,6 +16,7 @@ sudo aptitude -y install rdesktop
 sudo aptitude -y install liboctave-dev libtiff4-dev
 sudo aptitude -y install ffmpeg
 sudo aptitude -y install sshfs
+sudo aptitude -y install screen
 
 # for Lab
 sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libboost-all-dev octave3.2 octave3.2-headers libusb-1.0-0-dev libgtk2.0-dev
