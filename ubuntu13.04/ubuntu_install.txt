@@ -3,6 +3,9 @@ vi etc/rc.local
 /home/hamko/.dropbox-dist/dropboxd
 をexitの上に追記
 
+# Altでtask managerなのがでないようにする
+ (CompizConfig Settings Manager) > Ubuntu Unity Plugin 
+
 #ubuntu software center
 system load indicator
 sound converter
