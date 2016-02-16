@@ -1,0 +1,83 @@
+#dropbox rc
+vi etc/rc.local
+/home/hamko/.dropbox-dist/dropboxd
+をexitの上に追記
+
+# Altでtask managerなのがでないようにする
+ (CompizConfig Settings Manager) > Ubuntu Unity Plugin 
+
+#ubuntu software center
+system load indicator
+sound converter
+
+#sound converter
+add flles (/home/Dropbox/Music/)
+このフォルダの中へ (/home/Dropbox/Music/mp3/)
+delete original file
+Format MP3
+
+#gnome-control-center
+# Keyboard Layout -> Ctrl Position -> Caps Lock as Ctrl
+
+##Skype
+#1) /etc/apt/sources.listをいじって、以下の部分のコメントアウトを外す（Ubuntu12.10の場合）
+#deb http://archive.canonical.com/ubuntu quantal partner
+#2) ターミナルから以下を実行
+sudo apt-get update
+sudo apt-get install skype
+
+####Eigen
+#http://eigen.tuxfamily.org/index.php?title=Main_Pageから最新版のソースをダウンロードする．
+#/home/Downloadsに，tar.gz形式で落としたと仮定すると，
+#cd ~/Downloads
+#tar xvf ~/Downloads/eigen-******.tar.gz
+#mkdir ~/eigen
+#cd ~/eigen
+#cmake ~/Downloads/eigen-******
+#sudo make install
+
+
+#mozc
+#input methodの設定から、カスタマイズでmozcの優先順位を上げる
+
+####
+# gnome-session-properties 
+# 以下を追加
+#/home/ryo/.dropbox-dist/dropboxd
+#/usr/bin/ibus-setup
+#/usr/bin/skype
+
+# ~/.gitconfigに
+#[core]
+#    excludesfile = ~/git/setting/config/.gitignore
+
+####armadillo
+#sudo aptitude install libblas-dev liblapack-dev
+#http://sourceforge.net/projects/arma/files/armadillo-3.4.2.tar.gz/download からとってくる.
+#cd ~/Download
+#tar xvf armadillo-3.4.2.tar.gz
+#cd armadillo-3.4.2
+#./configure --prefix=/usr/local
+#make
+#sudo make install
+
+# ThinkPadのタッチパネル無効化
+/usr/share/X11/xorg.conf.d/50-synaptics.confの最後に以下を追記。
+Section "InputClass"
+    Identifier "no need for accelerometers in X"
+    MatchProduct "SynPS/2 Synaptics TouchPad"
+    Option "Ignore" "on"
+EndSection
+
+# ディレクトリ名を日本語から英語に
+LANG=C xdg-user-dirs-gtk-update
+
+# vmplayer 
+https://my.vmware.com/jp/web/vmware/free#desktop_end_user_computing/vmware_player/
+txtをダウンロードして実行権限をつけて実行。
+その後、以下を実行
+sudo apt-get install build-essential linux-headers-$(uname -r) open-vm-dkms
+sudo ln -s /usr/src/linux-headers-$(uname -r)/include/generated/uapi/linux/version.h /usr/src/linux-headers-$(uname -r)/include/linux/version.h
+sudo vmware-modconfig --console --install-all
+sudo modprobe vmmon
+sudo modprobe vmci
