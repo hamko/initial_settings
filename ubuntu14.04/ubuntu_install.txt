@@ -1,3 +1,12 @@
+# Chrome
+search Chrome from firefox!
+
+# Network
+192.168.149.5 DNS
+192.168.192.63 cat (my desktop)
+255.255.255.0 mask
+192.168.149.254 gateway
+
 #dropbox rc
 vi etc/rc.local
 /home/hamko/.dropbox-dist/dropboxd

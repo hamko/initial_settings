@@ -8,8 +8,8 @@ sudo aptitude -y install git sysv-rc-conf
 
 git config --global github.name hamko
 git config --global user.name hamko
-git config --global github.email !!!your email!!!
-git config --global user.email !!!your email!!!
+git config --global github.email wakataberyo@gmail.com
+git config --global user.email wakataberyo@gmail.com
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 git config --global core.excludesfile ~/git/setting/config/.gitignore
