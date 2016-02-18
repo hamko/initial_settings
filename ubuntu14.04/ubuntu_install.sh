@@ -37,20 +37,20 @@ sudo aptitude -y install libcppunit-1.12-1 libcppunit-dev libcppunit-doc libcppu
 #Couldn't find any package whose name or description matched "libglut3-dev"
 sudo aptitude -y install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev build-essential
 
+#mozc
+sudo aptitude -y install ibus-mozc
+killall ibus-daemon && ibus-daemon -d -x
+
+
+
+
+exit
+
+
+
+
 cd ~
 mkdir build; cd build 
-
-# sshfs
-if [ -e ~/Dropbox/setting/bin/set_sshfs.sh ]; then
-    ~/Dropbox/setting/bin/set_sshfs.sh
-fi
-
-##Chrome (aptitudeじゃダメなん？)
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list
-sudo aptitude update
-sudo aptitude -y install google-chrome-beta
-
 
 ####PCL
 sudo add-apt-repository -y ppa:v-launchpad-jochen-sprickerhof-de/pcl
@@ -81,9 +81,6 @@ sudo service vmware start
 #recordmydesktop
 sudo aptitude -y install mencoder
 
-#mozc
-sudo aptitude -y install ibus-mozc
-killall ibus-daemon && ibus-daemon -d -x
 
 # gmediafinder
 sudo apt-add-repository ppa:s-lagui/ppa
@@ -94,9 +91,3 @@ sudo apt-get -y install gmediafinder
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 sudo aptitude update
 sudo aptitude -y install acroread
-
-# youtube-dl
-sudo apt-get -y install youtube-dl
-
-# topcoder
-cp -r topcoder ~

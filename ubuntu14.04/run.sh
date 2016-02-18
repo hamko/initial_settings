@@ -3,6 +3,9 @@ cd ~
 mkdir build
 cd build
 
+# ディレクトリ名を日本語から英語に
+LANG=C xdg-user-dirs-gtk-update
+
 sudo apt-get -y install aptitude 
 sudo aptitude -y install git sysv-rc-conf
 
@@ -20,9 +23,10 @@ git config --global alias.ci 'commit -a'
 git config --global alias.di 'diff'
 git config --global alias.br 'branch'
 
-cd ~
-mkdir git
-cd git
+git config --global user.email "wakataberyo@gmail.com"
+git config --global user.name "Ryo Wakatabe"
+git config --global push.default simple
+
 git clone https://github.com/hamko/sandbox.git
 git clone https://github.com/hamko/libhamkoutil.git
 git clone https://github.com/hamko/setting.git
@@ -30,13 +34,3 @@ git clone https://github.com/hamko/initial_settings.git
 git clone https://github.com/hamko/cppode.git
 git clone https://github.com/hamko/docs.git
 git clone https://github.com/hamko/sample.git
-
-# dropbox (sudo aptitude install dropboxじゃダメ？)
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-sudo cp dropbox /etc/init.d/dropbox
-sudo sysv-rc-conf dropbox on
-~/.dropbox-dist/dropboxd &
-
-cp vimrc ~/.vimrc
-cp bashrc ~/.bashrc
-cp zshrc ~/.zshrc
