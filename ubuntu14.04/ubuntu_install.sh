@@ -41,6 +41,8 @@ sudo aptitude -y install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-de
 sudo aptitude -y install ibus-mozc
 killall ibus-daemon && ibus-daemon -d -x
 
+#TBB
+sudo aptitude install -y libtbb-dev
 
 
 
