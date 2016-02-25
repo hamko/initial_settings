@@ -1,5 +1,8 @@
 #!/bin/sh
 
+cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
+cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
+
 sudo apt-get -y install aptitude
 sudo aptitude -y install vim
 sudo aptitude -y install git gitk 
@@ -15,9 +18,6 @@ git clone https://github.com/hamko/stocks
 git clone https://github.com/hamko/libhamkoutil
 git clone https://github.com/hamko/contest
 git clone https://github.com/hamko/cppode
-
-cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
-cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
 
 sudo aptitude -y install subversion valgrind libboost-all-dev gnuplot minicom cmake cmake-curses-gui octave3.2 octave3.2-headers octave3.2-htmldoc rdesktop liboctave-dev libtiff4-dev ffmpeg sshfs screen
 
@@ -40,6 +40,9 @@ sudo aptitude -y install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-de
 #mozc
 sudo aptitude -y install ibus-mozc
 killall ibus-daemon && ibus-daemon -d -x
+
+# Java
+sudo aptitude -y install icedtea-netx
 
 
 
