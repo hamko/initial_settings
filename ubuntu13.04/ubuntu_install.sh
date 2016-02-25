@@ -4,6 +4,7 @@ cd ~
 mkdir build; cd build 
 
 sudo apt-get -y install aptitude
+sudo aptitude -y install vim
 sudo aptitude -y install git gitk 
 sudo aptitude -y install subversion
 sudo aptitude -y install valgrind
@@ -18,6 +19,12 @@ sudo aptitude -y install ffmpeg
 sudo aptitude -y install sshfs
 sudo aptitude -y install screen
 
+# google chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo aptitude -y install google-chrome-stable
+
+
 # for Lab
 sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libboost-all-dev octave3.2 octave3.2-headers libusb-1.0-0-dev libgtk2.0-dev
 
@@ -30,11 +37,8 @@ if [ -e ~/Dropbox/setting/bin/set_sshfs.sh ]; then
     ~/Dropbox/setting/bin/set_sshfs.sh
 fi
 
-##Chrome (aptitudeじゃダメなん？)
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list
-sudo aptitude update
-sudo aptitude -y install google-chrome-beta
+##Chrome 
+sudo apt-get install google-chrome-stable
 
 # eigen, qt, glew, yaml, zlib, libjpeg, libode, libpng
 sudo aptitude -y install build-essential cmake-curses-gui libboost-all-dev libeigen3-dev libeigen3-doc libqt4-dev libqt4-opengl-dev qt4-dev-tools qt4-qtconfig qt4-doc-html libglew1.6-dev libyaml-dev gettext zlib1g-dev libjpeg62-dev libpng12-dev libode-dev libomniorb4-dev libcos4-dev omniidl omniorb-nameserver libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libpulse-dev libsndfile1-dev uuid-dev
@@ -60,7 +64,7 @@ sudo apt-get update && sudo apt-get install nautilus-dropbox
 sudo aptitude -y install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev build-essential
 
 ##OpenCV
-./opencv_installer.sh
+#./opencv_installer.sh
 
 ##inkscape
 sudo aptitude -y install inkscape
@@ -92,5 +96,3 @@ sudo aptitude -y install acroread
 # youtube-dl
 sudo apt-get -y install youtube-dl
 
-# topcoder
-cp -r topcoder ~

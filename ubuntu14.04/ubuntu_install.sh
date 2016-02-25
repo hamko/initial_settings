@@ -44,6 +44,8 @@ killall ibus-daemon && ibus-daemon -d -x
 # Java
 sudo aptitude -y install icedtea-netx
 
+#TBB
+sudo aptitude install -y libtbb-dev
 
 
 
