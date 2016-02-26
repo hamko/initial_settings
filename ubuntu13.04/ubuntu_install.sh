@@ -18,6 +18,9 @@ sudo aptitude -y install ffmpeg
 sudo aptitude -y install sshfs
 sudo aptitude -y install screen
 
+sudo aptitude -y install ssh
+sudo /etc/init.d/ssh start
+
 # for Lab
 sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libboost-all-dev octave3.2 octave3.2-headers libusb-1.0-0-dev libgtk2.0-dev
 
