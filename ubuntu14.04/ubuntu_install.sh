@@ -19,7 +19,7 @@ git clone https://github.com/hamko/cppode
 cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
 cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
 
-sudo aptitude -y install subversion valgrind libboost-all-dev gnuplot minicom cmake cmake-curses-gui octave3.2 octave3.2-headers octave3.2-htmldoc rdesktop liboctave-dev libtiff4-dev ffmpeg sshfs screen
+sudo aptitude -y install subversion valgrind libboost-all-dev gnuplot minicom cmake cmake-curses-gui octave3.2 octave3.2-headers octave3.2-htmldoc rdesktop liboctave-dev libtiff4-dev ffmpeg sshfs screen xclip
 
 # for Lab
  sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libboost-all-dev octave3.2 octave3.2-headers libusb-1.0-0-dev libgtk2.0-dev
