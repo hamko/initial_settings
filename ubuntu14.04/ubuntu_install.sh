@@ -1,5 +1,8 @@
 #!/bin/sh
 
+cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
+cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
+
 sudo apt-get -y install aptitude
 sudo aptitude -y install vim
 sudo aptitude -y install git gitk 
@@ -40,6 +43,9 @@ sudo aptitude -y install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-de
 #mozc
 sudo aptitude -y install ibus-mozc
 killall ibus-daemon && ibus-daemon -d -x
+
+# Java
+sudo aptitude -y install icedtea-netx
 
 #TBB
 sudo aptitude install -y libtbb-dev
