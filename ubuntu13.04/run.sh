@@ -1,6 +1,5 @@
 # !!!で検索
-sudo apt-get -y install aptitude
-sudo aptitude -y install vim git sysv-rc-conf
+sudo apt-get -y install vim git sysv-rc-conf
 git config --global github.name hamko
 git config --global user.name hamko
 git config --global github.email wakataberyo@gmail.com
@@ -31,7 +30,7 @@ cp ~/git/setting/rc/.vimrc ~
 cp ~/git/setting/rc/.bashrc ~
 cp ~/git/setting/rc/.zshrc ~
 
-# dropbox (sudo aptitude install dropboxじゃダメ？)
+# dropbox (sudo apt-get install dropboxじゃダメ？)
 #cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 #sudo cp dropbox /etc/init.d/dropbox
 #sudo sysv-rc-conf dropbox on
