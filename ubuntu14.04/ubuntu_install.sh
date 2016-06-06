@@ -1,11 +1,11 @@
 #!/bin/sh
 
-cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
-cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
-
 sudo apt-get -y install aptitude
 sudo aptitude -y install vim
 sudo aptitude -y install git gitk 
+git config --global user.email "wakataberyo@gmail.com"
+git config --global user.name "Ryo Wakatabe"
+
 
 cd ~
 mkdir git
@@ -22,6 +22,11 @@ git clone https://github.com/hamko/cppode
 cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
 cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
 
+#mozc
+sudo aptitude -y install ibus-mozc
+killall ibus-daemon && ibus-daemon -d -x
+
+# fundamentals
 sudo aptitude -y install subversion valgrind libboost-all-dev gnuplot minicom cmake cmake-curses-gui octave3.2 octave3.2-headers octave3.2-htmldoc rdesktop liboctave-dev libtiff4-dev ffmpeg sshfs screen xclip
 
 # for Lab
@@ -40,30 +45,19 @@ sudo aptitude -y install libcppunit-1.12-1 libcppunit-dev libcppunit-doc libcppu
 #Couldn't find any package whose name or description matched "libglut3-dev"
 sudo aptitude -y install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev build-essential
 
-#mozc
-sudo aptitude -y install ibus-mozc
-killall ibus-daemon && ibus-daemon -d -x
-
 # Java
 sudo aptitude -y install icedtea-netx
 
 #TBB
 sudo aptitude install -y libtbb-dev
 
-
+####PCL
+sudo aptitude -y install libpcl1-dev
 
 exit
 
 
 
-
-cd ~
-mkdir build; cd build 
-
-####PCL
-sudo add-apt-repository -y ppa:v-launchpad-jochen-sprickerhof-de/pcl
-sudo apt-get -y update
-sudo apt-get -y install libpcl-all
 
 ####ROS installできなくなってる
 ##Catkin workspace
