@@ -26,14 +26,15 @@ killall ibus-daemon && ibus-daemon -d -x
 # fundamentals
 sudo aptitude -y install build-essential 
 sudo aptitude -y install valgrind gnuplot minicom cmake 
-sudo aptitude -y install libtiff4-dev sshfs screen xclip
+sudo aptitude -y install sshfs screen xclip
 sudo aptitude -y install subversion
 sudo aptitude -y install rdesktop
 sudo aptitude -y install thunar
+sudo aptitude -y install byobu
 
 # for Lab
 sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libusb-1.0-0-dev libgtk2.0-dev
-sudo aptitude -y install cmake-curses-gui liboctave-dev octave-control
+sudo aptitude -y install cmake-curses-gui liboctave-dev octave-control libtiff4-dev 
 
 # Drawing softs
 sudo aptitude -y install inkscape gimp
