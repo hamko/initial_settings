@@ -42,11 +42,11 @@ sudo aptitude -y install inkscape gimp
 sudo aptitude -y install libeigen3-dev libeigen3-doc libqt4-dev libqt4-opengl-dev qt4-dev-tools qt4-qtconfig qt4-doc-html libglew1.6-dev libyaml-dev gettext zlib1g-dev libjpeg62-dev libpng12-dev libode-dev libomniorb4-dev libcos4-dev omniidl omniorb-nameserver libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libpulse-dev libsndfile1-dev uuid-dev
 
 ####CPPUNIT
-sudo aptitude -y install libcppunit-1.12-1 libcppunit-dev libcppunit-doc libcppunit-subunit-dev libcppunit-subunit0 libqxcppunit-dev libqxcppunitd1 
+sudo aptitude -y install libcppunit-dev libcppunit-doc libcppunit-subunit-dev libcppunit-subunit0 libqxcppunit-dev libqxcppunitd1 
 
 ####OpenGL
 #Couldn't find any package whose name or description matched "libglut3-dev"
-sudo aptitude -y install freeglut3-dev freeglut3-dbg  libglut3-dev libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev 
+sudo aptitude -y install freeglut3-dev freeglut3-dbg libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev 
 
 # Java
 sudo aptitude -y install icedtea-netx
@@ -59,9 +59,18 @@ sudo aptitude -y install libpcl1-dev
 
 #recordmydesktop
 sudo aptitude -y install mencoder
+sudo aptitude -y install recordmydesktop gtk-recordmydesktop
+
+# ROS Indigo (14.04 only)
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
+wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+sudo aptitude update
+sudo aptitude install ros-indigo-desktop-full python-rosinstall
+sudo rosdep init
+rosdep update
+source ~/.bashrc
 
 exit
 
 
-# OpenCV
-# ROS
+# OpenCVは更新が早いので、自動では入れないこととする

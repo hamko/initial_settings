@@ -4,3 +4,10 @@ search Chrome from firefox!
 # nocaps
 sudo vi /etc/default/keyboard # XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
+
+# 秘密鍵
+# 取ってきて、.sshに突っ込む
+# .ssh # 700
+#   id_rsa # 600
+#   authorized_keys # 600
+#   id_rsa.pub # 700
