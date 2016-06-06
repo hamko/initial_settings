@@ -24,6 +24,7 @@ sudo aptitude -y install ibus-mozc
 killall ibus-daemon && ibus-daemon -d -x
 
 # fundamentals
+sudo aptitude -y install build-essential 
 sudo aptitude -y install valgrind gnuplot minicom cmake 
 sudo aptitude -y install libtiff4-dev ffmpeg sshfs screen xclip
 sudo aptitude -y install subversion
