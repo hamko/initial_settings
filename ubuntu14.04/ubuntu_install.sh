@@ -1,8 +1,7 @@
 #!/bin/sh
 
-sudo apt-get -y install aptitude
-sudo aptitude -y install vim
-sudo aptitude -y install git gitk 
+sudo apt-get -y install vim
+sudo apt-get -y install git gitk 
 git config --global user.email "wakataberyo@gmail.com"
 git config --global user.name "Ryo Wakatabe"
 git config --global push.default simple
@@ -19,54 +18,50 @@ git clone https://github.com/hamko/libhamkoutil
 cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
 cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
 
-#mozc
-sudo aptitude -y install ibus-mozc
-killall ibus-daemon && ibus-daemon -d -x
-
 # fundamentals
-sudo aptitude -y install build-essential 
-sudo aptitude -y install valgrind gnuplot minicom cmake 
-sudo aptitude -y install sshfs screen xclip
-sudo aptitude -y install subversion
-sudo aptitude -y install rdesktop
-sudo aptitude -y install thunar
-sudo aptitude -y install byobu
+sudo apt-get -y install build-essential 
+sudo apt-get -y install valgrind gnuplot minicom cmake 
+sudo apt-get -y install sshfs screen xclip
+sudo apt-get -y install subversion
+sudo apt-get -y install rdesktop
+sudo apt-get -y install thunar
+sudo apt-get -y install byobu
 
 # for Lab
-sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libusb-1.0-0-dev libgtk2.0-dev
-sudo aptitude -y install cmake-curses-gui liboctave-dev octave-control libtiff4-dev 
+sudo apt-get -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libusb-1.0-0-dev libgtk2.0-dev
+sudo apt-get -y install cmake-curses-gui liboctave-dev octave-control libtiff4-dev 
 
 # Drawing softs
-sudo aptitude -y install inkscape gimp
+sudo apt-get -y install inkscape gimp
 
 # eigen, qt, glew, yaml, zlib, libjpeg, libode, libpng
-sudo aptitude -y install libeigen3-dev libeigen3-doc libqt4-dev libqt4-opengl-dev qt4-dev-tools qt4-qtconfig qt4-doc-html libglew1.6-dev libyaml-dev gettext zlib1g-dev libjpeg62-dev libpng12-dev libode-dev libomniorb4-dev libcos4-dev omniidl omniorb-nameserver libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libpulse-dev libsndfile1-dev uuid-dev
+sudo apt-get -y install libeigen3-dev libeigen3-doc libqt4-dev libqt4-opengl-dev qt4-dev-tools qt4-qtconfig qt4-doc-html libglew1.6-dev libyaml-dev gettext zlib1g-dev libjpeg62-dev libpng12-dev libode-dev libomniorb4-dev libcos4-dev omniidl omniorb-nameserver libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libpulse-dev libsndfile1-dev uuid-dev
 
 ####CPPUNIT
-sudo aptitude -y install libcppunit-dev libcppunit-doc libcppunit-subunit-dev libcppunit-subunit0 libqxcppunit-dev libqxcppunitd1 
+sudo apt-get -y install libcppunit-dev libcppunit-doc libcppunit-subunit-dev libcppunit-subunit0 libqxcppunit-dev libqxcppunitd1 
 
 ####OpenGL
 #Couldn't find any package whose name or description matched "libglut3-dev"
-sudo aptitude -y install freeglut3-dev freeglut3-dbg libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev 
+sudo apt-get -y install freeglut3-dev freeglut3-dbg libglew1.5-dev libgtkglext1-dev libxmu-dev libxi-dev 
 
 # Java
-sudo aptitude -y install icedtea-netx
+sudo apt-get -y install icedtea-netx
 
 #TBB
-sudo aptitude install -y libtbb-dev
+sudo apt-get install -y libtbb-dev
 
 ####PCL
-sudo aptitude -y install libpcl1-dev
+sudo apt-get -y install libpcl1-dev
 
 #recordmydesktop
-sudo aptitude -y install mencoder
-sudo aptitude -y install recordmydesktop gtk-recordmydesktop
+sudo apt-get -y install mencoder
+sudo apt-get -y install recordmydesktop gtk-recordmydesktop
 
 # ROS Indigo (14.04 only)
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
 wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
-sudo aptitude update
-sudo aptitude install ros-indigo-desktop-full python-rosinstall
+sudo apt-get update
+sudo apt-get install ros-indigo-desktop-full python-rosinstall
 sudo rosdep init
 rosdep update
 source ~/.bashrc
