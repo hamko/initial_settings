@@ -14,9 +14,13 @@ git clone https://github.com/hamko/initial_settings
 git clone https://github.com/hamko/procon
 git clone https://github.com/hamko/sample
 git clone https://github.com/hamko/libhamkoutil
+git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+git clone https://github.com/Shougo/vimproc ~/.vim/bundle/vimproc
 
 cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
 cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
+rm -rf /home/hamko/.vim/bundle/neosnippet-snippets/neosnippets
+cp -r ~/git/setting/neosnippets/ /home/hamko/.vim/bundle/neosnippet-snippets/
 
 # fundamentals
 sudo apt-get -y install build-essential 

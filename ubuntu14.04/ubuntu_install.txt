@@ -2,8 +2,7 @@
 search Chrome from firefox!
 
 # nocaps
-sudo vi /etc/default/keyboard # XKBOPTIONS="ctrl:nocaps"
-sudo dpkg-reconfigure keyboard-configuration
+# これは.bashrcで解決するので、何もしない
 
 # 秘密鍵
 # 取ってきて、.sshに突っ込む
