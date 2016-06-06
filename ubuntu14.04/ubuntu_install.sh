@@ -5,19 +5,16 @@ sudo aptitude -y install vim
 sudo aptitude -y install git gitk 
 git config --global user.email "wakataberyo@gmail.com"
 git config --global user.name "Ryo Wakatabe"
-
+git config --global push.default simple
 
 cd ~
 mkdir git
 cd git
 git clone https://github.com/hamko/setting
-git clone https://github.com/hamko/topcoder
-git clone https://github.com/hamko/Kampani
+git clone https://github.com/hamko/initial_settings
+git clone https://github.com/hamko/procon
 git clone https://github.com/hamko/sample
-git clone https://github.com/hamko/stocks
 git clone https://github.com/hamko/libhamkoutil
-git clone https://github.com/hamko/contest
-git clone https://github.com/hamko/cppode
 
 cp ~/git/initial_settings/ubuntu14.04/vimrc ~/.vimrc
 cp ~/git/initial_settings/ubuntu14.04/bashrc ~/.bashrc
@@ -27,10 +24,14 @@ sudo aptitude -y install ibus-mozc
 killall ibus-daemon && ibus-daemon -d -x
 
 # fundamentals
-sudo aptitude -y install subversion valgrind libboost-all-dev gnuplot minicom cmake cmake-curses-gui octave3.2 octave3.2-headers octave3.2-htmldoc rdesktop liboctave-dev libtiff4-dev ffmpeg sshfs screen xclip
+sudo aptitude -y install valgrind gnuplot minicom cmake 
+sudo aptitude -y install libtiff4-dev ffmpeg sshfs screen xclip
+sudo aptitude -y install subversion libboost-all-dev 
+sudo aptitude -y install rdesktop
 
 # for Lab
- sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libboost-all-dev octave3.2 octave3.2-headers libusb-1.0-0-dev libgtk2.0-dev
+sudo aptitude -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libusb-1.0-0-dev libgtk2.0-dev
+sudo aptitude -y install cmake-curses-gui octave3.2 octave3.2-headers octave3.2-htmldoc liboctave-dev 
 
 # Drawing softs
 sudo aptitude -y install inkscape gimp
@@ -54,42 +55,11 @@ sudo aptitude install -y libtbb-dev
 ####PCL
 sudo aptitude -y install libpcl1-dev
 
-exit
-
-
-
-
-####ROS installできなくなってる
-##Catkin workspace
-
-#Dropbox
-sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
-sudo add-apt-repository "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
-sudo apt-get update && sudo apt-get install nautilus-dropbox
-
-##OpenCV
-./opencv_installer.sh
-
-##inkscape
-sudo aptitude -y install inkscape
-
-#for vm
-sudo aptitude -y install build-essential linux-headers-$(uname -r) open-vm-dkms
-sudo ln -s /usr/src/linux-headers-$(uname -r)/include/generated/uapi/linux/version.h /usr/src/linux-headers-$(uname -r)/include/linux/version.h
-sudo insmod /lib/modules/3.8.0-19-generic/misc/vmmon.ko
-sudo vmware-modconfig --console --install-all
-sudo service vmware start
-
 #recordmydesktop
 sudo aptitude -y install mencoder
 
+exit
 
-# gmediafinder
-sudo apt-add-repository ppa:s-lagui/ppa
-sudo apt-get update
-sudo apt-get -y install gmediafinder
 
-#acroread
-sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
-sudo aptitude update
-sudo aptitude -y install acroread
+# OpenCV
+# ROS

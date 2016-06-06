@@ -4,13 +4,3 @@ search Chrome from firefox!
 # nocaps
 sudo vi /etc/default/keyboard # XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
-
-# vmplayer 
-https://my.vmware.com/jp/web/vmware/free#desktop_end_user_computing/vmware_player/
-txtをダウンロードして実行権限をつけて実行。
-その後、以下を実行
-sudo apt-get install build-essential linux-headers-$(uname -r) open-vm-dkms
-sudo ln -s /usr/src/linux-headers-$(uname -r)/include/generated/uapi/linux/version.h /usr/src/linux-headers-$(uname -r)/include/linux/version.h
-sudo vmware-modconfig --console --install-all
-sudo modprobe vmmon
-sudo modprobe vmci
