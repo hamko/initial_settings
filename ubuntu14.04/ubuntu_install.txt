@@ -13,3 +13,6 @@ search Chrome from firefox!
 #   id_rsa # 600
 #   authorized_keys # 600
 #   id_rsa.pub # 700
+
+# insync
+
