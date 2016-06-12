@@ -31,6 +31,9 @@ sudo apt-get -y install rdesktop
 sudo apt-get -y install thunar
 sudo apt-get -y install byobu
 
+# TeX
+sudo aptitude install texlive texlive-latex-extra ptex-bin dvipsk-ja cmap-adobe-japan1 cmap-adobe-japan2 gs-cjk-resource
+
 # for Lab
 sudo apt-get -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libusb-1.0-0-dev libgtk2.0-dev
 sudo apt-get -y install cmake-curses-gui liboctave-dev octave-control libtiff4-dev 
