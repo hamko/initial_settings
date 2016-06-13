@@ -30,6 +30,8 @@ sudo apt-get -y install subversion
 sudo apt-get -y install rdesktop
 sudo apt-get -y install thunar
 sudo apt-get -y install byobu
+sudo apt-get -y install ack-grep
+
 
 # TeX
 sudo aptitude install texlive texlive-latex-extra ptex-bin dvipsk-ja cmap-adobe-japan1 cmap-adobe-japan2 gs-cjk-resource
