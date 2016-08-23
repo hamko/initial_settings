@@ -31,6 +31,7 @@ sudo apt-get -y install rdesktop
 sudo apt-get -y install thunar
 sudo apt-get -y install byobu
 sudo apt-get -y install ack-grep
+sudo apt-get -y install ccache
 
 
 # TeX
