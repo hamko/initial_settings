@@ -52,7 +52,7 @@ sudo apt-get install skype
 #    excludesfile = ~/git/setting/config/.gitignore
 
 ####armadillo
-#sudo aptitude install libblas-dev liblapack-dev
+#sudo apt-get install libblas-dev liblapack-dev
 #http://sourceforge.net/projects/arma/files/armadillo-3.4.2.tar.gz/download からとってくる.
 #cd ~/Download
 #tar xvf armadillo-3.4.2.tar.gz

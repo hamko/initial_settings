@@ -1,19 +1,12 @@
 # !!!で検索
-cd ~
-mkdir build
-cd build
-
-sudo apt-get -y install aptitude 
-sudo aptitude -y install git sysv-rc-conf
-
+sudo apt-get -y install vim git sysv-rc-conf
 git config --global github.name hamko
 git config --global user.name hamko
-git config --global github.email !!!your email!!!
-git config --global user.email !!!your email!!!
+git config --global github.email wakataberyo@gmail.com
+git config --global user.email wakataberyo@gmail.com
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 git config --global core.excludesfile ~/git/setting/config/.gitignore
-
 git config --global alias.co 'checkout'
 git config --global alias.st 'status'
 git config --global alias.ci 'commit -a'
@@ -31,12 +24,16 @@ git clone https://github.com/hamko/cppode.git
 git clone https://github.com/hamko/docs.git
 git clone https://github.com/hamko/sample.git
 
-# dropbox (sudo aptitude install dropboxじゃダメ？)
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-sudo cp dropbox /etc/init.d/dropbox
-sudo sysv-rc-conf dropbox on
-~/.dropbox-dist/dropboxd &
+cp ~/git/setting/rc/.inputrc ~
+cp ~/git/setting/rc/.commonrc ~
+cp ~/git/setting/rc/.vimrc ~
+cp ~/git/setting/rc/.bashrc ~
+cp ~/git/setting/rc/.zshrc ~
 
-cp vimrc ~/.vimrc
-cp bashrc ~/.bashrc
-cp zshrc ~/.zshrc
+# dropbox (sudo apt-get install dropboxじゃダメ？)
+#cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+#sudo cp dropbox /etc/init.d/dropbox
+#sudo sysv-rc-conf dropbox on
+#~/.dropbox-dist/dropboxd &
+
+
