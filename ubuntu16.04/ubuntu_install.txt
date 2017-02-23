@@ -1,0 +1,19 @@
+# ディレクトリ英語化
+LANG=C xdg-user-dirs-gtk-update
+
+# Chrome
+search Chrome from firefox!
+
+# nocaps
+# これは.bashrcで解決するので、何もしない
+
+# 秘密鍵
+# 取ってきて、.sshに突っ込む
+# .ssh # 700
+#   id_rsa # 600
+#   authorized_keys # 600
+#   id_rsa.pub # 700
+
+# insync
+
+# Shutter 
