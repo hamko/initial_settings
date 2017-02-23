@@ -32,6 +32,7 @@ sudo apt-get -y install byobu
 sudo apt-get -y install ack-grep
 sudo apt-get -y install ccache
 sudo apt-get -y install terminator
+sudo apt-get -y install clang-3.5
 
 # TeX
 sudo apt-get -y install texlive texlive-latex-extra ptex-bin dvipsk-ja cmap-adobe-japan1 cmap-adobe-japan2 gs-cjk-resource

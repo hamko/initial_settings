@@ -1,11 +1,22 @@
 # ディレクトリ英語化
 LANG=C xdg-user-dirs-gtk-update
 
-# Chrome
-search Chrome from firefox!
 
-# nocaps
-# これは.bashrcで解決するので、何もしない
+# ctrl-caps 交換
+sudo vi /etc/default/keyboard
+# KEYBOARD CONFIGURATION FILE
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="pc105"
+XKBLAYOUT="jp"
+XKBVARIANT=""
+XKBOPTIONS="ctrl:nocaps" 
+BACKSPACE="guess"
+
+
+# Ubuntu14.04以降、半角mozcの変換は
+# keyboard ->shortcut->typing->switcht to next sourceで制御されている！！
 
 # 秘密鍵
 # 取ってきて、.sshに突っ込む
