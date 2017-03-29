@@ -32,6 +32,8 @@ sudo apt-get -y install thunar
 sudo apt-get -y install byobu
 sudo apt-get -y install ack-grep
 sudo apt-get -y install ccache
+sudo apt-get -y install tree
+sudo apt-get -y install unar # 文字化けしないunzip
 
 
 # TeX
