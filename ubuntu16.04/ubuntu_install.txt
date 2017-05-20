@@ -1,0 +1,30 @@
+# ディレクトリ英語化
+LANG=C xdg-user-dirs-gtk-update
+
+
+# ctrl-caps 交換
+sudo vi /etc/default/keyboard
+# KEYBOARD CONFIGURATION FILE
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="pc105"
+XKBLAYOUT="jp"
+XKBVARIANT=""
+XKBOPTIONS="ctrl:nocaps" 
+BACKSPACE="guess"
+
+
+# Ubuntu14.04以降、半角mozcの変換は
+# keyboard ->shortcut->typing->switcht to next sourceで制御されている！！
+
+# 秘密鍵
+# 取ってきて、.sshに突っ込む
+# .ssh # 700
+#   id_rsa # 600
+#   authorized_keys # 600
+#   id_rsa.pub # 700
+
+# insync
+
+# Shutter 

@@ -28,20 +28,11 @@ sudo apt-get -y install valgrind gnuplot minicom cmake
 sudo apt-get -y install sshfs screen xclip
 sudo apt-get -y install subversion
 sudo apt-get -y install rdesktop
-sudo apt-get -y install thunar
+sudo apt-get -y install byobu
 sudo apt-get -y install ack-grep
 sudo apt-get -y install ccache
-<<<<<<< HEAD
-sudo apt-get -y install curl
-=======
-sudo apt-get -y install tree
-sudo apt-get -y install unar # 文字化けしないunzip
->>>>>>> 237adc521272fba7ae1809e31310bcdec9ff4cb3
-
-sudo apt-get -y install python3-pip
-sudo apt-get -y install python3-tk
-sudo pip install chainerrl
-sudo pip install numpy
+sudo apt-get -y install terminator
+sudo apt-get -y install clang-3.5
 
 # TeX
 sudo apt-get -y install texlive texlive-latex-extra ptex-bin dvipsk-ja cmap-adobe-japan1 cmap-adobe-japan2 gs-cjk-resource
@@ -87,7 +78,3 @@ rosdep update
 source ~/.bashrc
 
 exit
-
-
-# OpenCVは更新が早いので、自動では入れないこととする
->>>>>>> 8604fb4c3fe13694a2d5ecba100eb0dfab0d889a
