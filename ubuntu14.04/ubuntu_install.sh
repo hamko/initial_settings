@@ -29,10 +29,14 @@ sudo apt-get -y install sshfs screen xclip
 sudo apt-get -y install subversion
 sudo apt-get -y install rdesktop
 sudo apt-get -y install thunar
-sudo apt-get -y install byobu
 sudo apt-get -y install ack-grep
 sudo apt-get -y install ccache
+sudo apt-get -y install curl
 
+sudo apt-get -y install python3-pip
+sudo apt-get -y install python3-tk
+sudo pip install chainerrl
+sudo pip install numpy
 
 # TeX
 sudo apt-get -y install texlive texlive-latex-extra ptex-bin dvipsk-ja cmap-adobe-japan1 cmap-adobe-japan2 gs-cjk-resource
