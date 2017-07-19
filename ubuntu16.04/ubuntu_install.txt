@@ -1,19 +1,16 @@
+# Chrome
+
+# insync
+
+# Shutter 
+
 # ディレクトリ英語化
-LANG=C xdg-user-dirs-gtk-update
+# .bashrcに入っているはず
 
-
-# ctrl-caps 交換
+# ctrl-caps交換
+# 以下を設定して、再起動
 sudo vi /etc/default/keyboard
-# KEYBOARD CONFIGURATION FILE
-
-# Consult the keyboard(5) manual page.
-
-XKBMODEL="pc105"
-XKBLAYOUT="jp"
-XKBVARIANT=""
-XKBOPTIONS="ctrl:nocaps" 
-BACKSPACE="guess"
-
+# XKBOPTIONS="ctrl:nocaps" 
 
 # Ubuntu14.04以降、半角mozcの変換は
 # keyboard ->shortcut->typing->switcht to next sourceで制御されている！！
@@ -24,7 +21,3 @@ BACKSPACE="guess"
 #   id_rsa # 600
 #   authorized_keys # 600
 #   id_rsa.pub # 700
-
-# insync
-
-# Shutter 
