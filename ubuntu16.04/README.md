@@ -14,3 +14,12 @@ initial_settings/run.shが、*rcを、~/.*rcにコピーします。
 ~/.vimrc    ~/git/setting/rc/.vimrc,            ~/Dropbox/setting/rc/.vimrc
 gitは公開可能な設定、Dropboxは公開不可能な設定がかかれます。
 commonはzshでもbashでもよい設定がかかれます。
+
+
+
+# mozc.txt
+タブ区切りで以下のようにする
+
+よみ    漢字    品詞    コメント
+よみ    漢字    品詞    コメント
+...
