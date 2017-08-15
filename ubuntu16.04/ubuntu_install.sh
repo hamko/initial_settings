@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cat ubuntu_install.txt
+
 sudo apt-get -y install vim
 sudo apt-get -y install git gitk 
 git config --global user.email "wakataberyo@gmail.com"
@@ -67,14 +69,5 @@ sudo apt-get -y install libpcl1-dev
 #recordmydesktop
 sudo apt-get -y install mencoder
 sudo apt-get -y install recordmydesktop gtk-recordmydesktop
-
-# ROS Indigo (14.04 only)
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
-wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install ros-indigo-desktop-full python-rosinstall
-sudo rosdep init
-rosdep update
-source ~/.bashrc
 
 exit
