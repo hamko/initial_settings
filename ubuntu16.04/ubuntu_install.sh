@@ -43,9 +43,11 @@ sudo apt-get -y install texlive-full
 # for Lab
 sudo apt-get -y install libcv-dev libhighgui-dev libcvaux-dev libavdevice-dev libavformat-dev libavfilter-dev libavcodec-dev libswscale-dev libavutil-dev libusb-dev freeglut3-dev libusb-1.0-0-dev libgtk2.0-dev
 sudo apt-get -y install cmake-curses-gui liboctave-dev octave-control libtiff4-dev 
+sudo apt-get -y install scilab
+sudo apt-get -y install scilab
 
 # Drawing softs
-sudo apt-get -y install inkscape gimp
+sudo apt-get -y install inkscape gimp vlc
 
 # eigen, qt, glew, yaml, zlib, libjpeg, libode, libpng
 sudo apt-get -y install libeigen3-dev libeigen3-doc libqt4-dev libqt4-opengl-dev qt4-dev-tools qt4-qtconfig qt4-doc-html libglew1.6-dev libyaml-dev gettext zlib1g-dev libjpeg62-dev libpng12-dev libode-dev libomniorb4-dev libcos4-dev omniidl omniorb-nameserver libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libpulse-dev libsndfile1-dev uuid-dev
@@ -68,6 +70,10 @@ sudo apt-get -y install libpcl1-dev
 
 #recordmydesktop
 sudo apt-get -y install mencoder
-sudo apt-get -y install recordmydesktop gtk-recordmydesktop
+#sudo apt-get -y install recordmydesktop gtk-recordmydesktop
+
+sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
+sudo apt-get update
+sudo apt-get install simplescreenrecorder
 
 exit
