@@ -36,6 +36,7 @@ sudo apt-get -y install ccache
 sudo apt-get -y install terminator
 sudo apt-get -y install clang-3.5
 sudo apt-get -y install thunar
+sudo apt-get -y install tree
 
 # python
 sudo apt-get -y install python3-dev
