@@ -35,6 +35,20 @@ sudo apt-get -y install ack-grep
 sudo apt-get -y install ccache
 sudo apt-get -y install terminator
 sudo apt-get -y install clang-3.5
+sudo apt-get -y install thunar
+
+# python
+sudo apt-get -y install python3-dev
+python -V
+python3 -V #バージョンを確認。3.5だとする。
+sudo apt-get install python3.5-dev #ここのバージョンとして3.5を入れる
+sudo apt-get install python3-setuptools
+sudo easy_install3 pip
+pip -V # pipの場所がpython3になっていることを確認
+
+sudo pip install virtualenv
+sudo apt-get install python3-tk python-tk tk-dev
+
 
 # TeX
 sudo apt-get -y install texlive texlive-latex-extra ptex-bin dvipsk-ja cmap-adobe-japan1 cmap-adobe-japan2 gs-cjk-resource
