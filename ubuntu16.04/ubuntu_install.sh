@@ -3,13 +3,14 @@ cd ~
 sudo apt -y install vim git gitk fonts-inconsolata
 wget -O-  http://ftp.gnu.org/gnu/emacs/emacs-25.1.tar.xz | tar xJvf -
 cd emacs-25.1
-sudo apt install libgtk-3-dev libwebkitgtk-3.0-dev libgif-dev
+sudo apt install libgtk-3-dev libwebkitgtk-3.0-dev libgif-dev libpng12-dev libwebkitgtk-dev libwebkitgtk-3.0-dev
+sudo apt update
 ./configure --disable-largefile --with-x-toolkit=gtk3 \
     --without-toolkit-scroll-bars --without-xaw3d --without-xim \
     --without-compress-install --with-sound=no --without-pop \
     --without-xpm --without-tiff --without-rsvg --without-gconf \
     --without-gsettings --without-selinux --without-gpm \
-    --without-makeinfo --with-x --with-modules --with-xwidgets && time make -j8 
+    --without-makeinfo --with-x --with-modules --with-xwidgets --with-png=no && time make -j8
 sudo make install
 cd -
 
