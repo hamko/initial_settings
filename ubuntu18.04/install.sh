@@ -37,8 +37,4 @@ sudo apt -y install inkscape gimp vlc
 sudo apt -y install icedtea-netx
 
 #TBB
-sudo apt install -y libtbb-dev
-
-sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
-sudo apt update
-sudo apt install simplescreenrecorder
+sudo apt -y install libtbb-dev
