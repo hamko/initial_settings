@@ -21,6 +21,8 @@ sudo apt -y install rdesktop
 sudo apt -y install clang
 sudo apt -y install tree
 sudo apt -y install curl
+sudo apt -y install net-tools
+
 
 # Chrome
 sudo apt install software-properties-common apt-transport-https wget ca-certificates gnupg2 ubuntu-keyring -y
