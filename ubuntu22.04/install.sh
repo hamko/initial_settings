@@ -22,6 +22,7 @@ sudo apt -y install clang
 sudo apt -y install tree
 sudo apt -y install curl
 sudo apt -y install net-tools
+sudo apt -y install docker-compose
 
 # python
 sudo apt -y install python3
