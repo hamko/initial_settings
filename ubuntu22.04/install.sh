@@ -23,6 +23,7 @@ sudo apt -y install tree
 sudo apt -y install curl
 sudo apt -y install net-tools
 sudo apt -y install docker-compose
+sudo apt -y install gthumb
 
 # python
 sudo apt -y install python3
