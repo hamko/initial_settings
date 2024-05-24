@@ -1,7 +1,5 @@
-sudo vi /etc/default/keyboard
-# XKBOPTIONS="ctrl:nocaps"
-# logout
-# login
+# caps to ctrl
+https://qiita.com/peachft/items/c5de9a0224a6e710ba1d
 
 # Install Chrome
 
